@@ -1,0 +1,67 @@
+.custom-list {
+    list-style: none; /* Remove list bullets */
+
+}
+.custom-list li p{
+  color: rgba(255, 255,255, 0.3);
+}
+
+.custom-background {
+  background-color: rgba(0, 0, 0, 0.5); /* Set the desired color and opacity */
+  border-radius: 1em;
+  padding: 15px;
+  margin: 40px 50px;
+}
+
+/* GRID */
+
+.grid-container{
+  display:grid;
+  grid-template-columns: 5fr 5fr;
+  grid-template-rows: auto;
+  gap: 5px;
+}
+
+
+/* FADE PROPERTIES */
+/* Component 1 Styles */
+.fade1-enter {
+  opacity: 0;
+}
+
+.fade1-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.fade1-exit {
+  opacity: 1;
+}
+
+.fade1-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+/* Component 2 Styles */
+.fade2-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.fade2-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 1000ms, opacity 1000ms;
+}
+
+.fade2-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.fade2-exit-active {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 1000ms, opacity 1000ms;
+}
