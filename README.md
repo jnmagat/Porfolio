@@ -1,1 +1,1 @@
-Netlify: https://main--jonnm-portfolio.netlify.app/
+Netlify Link: https://jonnm.netlify.app/
