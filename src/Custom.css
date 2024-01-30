@@ -1,9 +1,8 @@
 .custom-list {
-    list-style: none; /* Remove list bullets */
-
+  list-style: none; /* Remove list bullets */
 }
-.custom-list li p{
-  color: rgba(255, 255,255, 0.3);
+.custom-list li p {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .custom-background {
@@ -15,13 +14,12 @@
 
 /* GRID */
 
-.grid-container{
-  display:grid;
+.grid-container {
+  display: grid;
   grid-template-columns: 5fr 5fr;
   grid-template-rows: auto;
   gap: 5px;
 }
-
 
 /* FADE PROPERTIES */
 /* Component 1 Styles */
