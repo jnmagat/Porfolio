@@ -7,7 +7,16 @@ import {
 import { faCodepen, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MyImage from "../assets/39111879.jpg";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+
 export default function PersonalDetails() {
+
+  const [ text ] = useTypewriter({
+    words: ['Developer','Programmer','Designer'],
+    loop:{},
+    typeSpeed:20,
+    deleteSpeed: 30
+  });
 
   const linkStyle = {
     color: "inherit", // Use 'inherit' to inherit the color from the parent, or specify a custom color
@@ -27,8 +36,11 @@ export default function PersonalDetails() {
       </div>
       <div >
         <h2 className="text-right">JONATHAN MAGAT</h2>
-        <h6 className="fst-italic" style={{ color: "rgba(255,255,255,0.4)" }}>
-          Aspiring Software Engineer
+        <h6 className="fst-italic" style={{ color: "rgba(255,255,255,0.7)" }}>
+          <span>
+            {text}
+          </span>
+          <Cursor cursorStyle="|"/>
         </h6>
         {/* <h2 className="text-right">MAGAT</h2> */}
       </div>

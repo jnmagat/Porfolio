@@ -3,28 +3,27 @@ import Projects from "./components/Projects";
 import PersonalDetails from "./components/PersonalDetails";
 
 function MainPage() {
-  const transformStyle = {
-    position: "absolute",
-    width: "80%",
-    left: "50%",
-    transform: "translate(-50%,0%)",
-  };
+
+  const numberOfBoxes = 400;
 
   return (
-    <>
-      <div
-        className="grid-container overflow-auto overflow-hidden"
-        style={transformStyle}
-      >
-        <div className="">
-         <SkillsPanel />
-          <Projects />
-        </div>
-        <div className="d-flex flex-column align-items-center text-white" >
-          <PersonalDetails />
-        </div>
+    <div className="container">
+      <div className="bgAnimation">
+        {Array.from({ length: numberOfBoxes }, (_, index) => (
+          <div key={index} className="colorBox">
+          </div>
+        ))}
       </div>
-    </>
+        <div className="grid-container">
+          <div className="column">
+            <div><SkillsPanel /></div>
+            <div><Projects /></div>
+          </div>
+          <div className="column" >
+            <div className="pDetails"><PersonalDetails /></div>
+          </div>
+        </div>
+    </div>
   );
 }
 
