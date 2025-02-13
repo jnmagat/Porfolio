@@ -3,6 +3,7 @@ export default function Projects() {
     <div className="custom-background">
       <h2 className="text-light">Projects</h2>
       <ul className="text-light custom-list">
+        <li>FrontGate System v2</li>
         <li>AIB Portal / Intranet or Web Portal</li>
         <li>DIGICUR / Digitization of Customer Records</li>
         <li>COCREE XML Extraction</li>
